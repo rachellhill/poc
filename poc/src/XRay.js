@@ -2,10 +2,7 @@ import React, { useEffect, useRef } from "react";
 import "ol/ol.css";
 import Map from "ol/Map";
 import View from "ol/View";
-import TileLayer from "ol/layer/Tile";
 import ImageLayer from "ol/layer/Image";
-import ImageStatic from "ol/source/ImageStatic";
-import Zoom from "ol/control/Zoom"; // Import Zoom control explicitly
 import xrayImage from "./xray.png";
 import Static from "ol/source/ImageStatic";
 import Projection from "ol/proj/Projection";
@@ -24,7 +21,7 @@ const XRay = () => {
 
     const xrayImageLayer = new ImageLayer({
       source: new Static({
-        attributions: "© Your Attribution Here", // Add your attributions or remove if not needed
+        attributions: "Frontal", // Add your attributions or remove if not needed
         url: xrayImage,
         projection: projection,
         imageExtent: extent,
