@@ -5,7 +5,7 @@ import Xray from "./XRay";
 function App() {
   return (
     <div className="App">
-      <h1>POC</h1>
+      <h1>openLayer</h1>
       <div className="image-container">
         <div className="doubles">
           <Xray />

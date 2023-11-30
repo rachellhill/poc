@@ -37,7 +37,7 @@ const XRay = () => {
       view: new View({
         projection: projection,
         center: getCenter(extent),
-        zoom: 2,
+        zoom: 1,
         maxZoom: 8,
       }),
     });
@@ -48,7 +48,7 @@ const XRay = () => {
   return (
     <div
       ref={mapRef}
-      style={{ border: "solid 2px", width: "300px", height: "300px" }}
+      style={{ border: "solid 2px", width: "300px", height: "500px" }}
     ></div>
   );
 };
