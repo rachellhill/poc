@@ -45,7 +45,12 @@ const XRay = () => {
     return () => map.setTarget(null);
   }, []);
 
-  return <div ref={mapRef} style={{ width: "600px", height: "600px" }}></div>;
+  return (
+    <div
+      ref={mapRef}
+      style={{ border: "solid 2px", width: "300px", height: "300px" }}
+    ></div>
+  );
 };
 
 export default XRay;

@@ -7,8 +7,14 @@ function App() {
     <div className="App">
       <h1>POC</h1>
       <div className="image-container">
-        <Xray />
-        <Xray />
+        <div className="doubles">
+          <Xray />
+          <Xray />
+        </div>
+        <div className="doubles">
+          <Xray />
+          <Xray />
+        </div>
       </div>
     </div>
   );
